@@ -19,4 +19,20 @@ validatePin("A400088");       // Invalid PIN: A400088
 validatePin("400088B");      // Invalid PIN: 400088B
 
 // PinCode UC-4 
-validatePin("400 088");      // Valid PIN: 400 088
+validatePin("400 088");      // Valid PIN: 400 088 
+
+// Function to validate email address
+function validateEmail(email) {
+    // Regular expression for full email validation (UC-1 to UC-5)
+    const emailPattern = /^[a-zA-Z0-9]+([._+-][a-zA-Z0-9]+)?@bridgelabz\.co(\.[a-z]{2})?$/;
+
+    // Checking if email matches the pattern
+    if (emailPattern.test(email)) {
+        console.log(`Valid Email: ${email}`);
+    } else {
+        console.log(`Invalid Email: ${email}`);
+    }
+} 
+
+// Email UC-1 
+validateEmail("abc@bridgelabz.co");        // Valid Email:
