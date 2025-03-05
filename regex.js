@@ -13,4 +13,7 @@ function validatePin(pin) {
 validatePin("400088");        // Valid PIN: 400088
 
 // PinCode UC-2 
-validatePin("A400088");       // Invalid PIN: A400088
+validatePin("A400088");       // Invalid PIN: A400088 
+
+// PinCode UC-3
+validatePin("400088B");      // Invalid PIN: 400088B
