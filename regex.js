@@ -1,3 +1,4 @@
+// Function to validate pin code
 function validatePin(pin) {
     const pinPattern = /^(?![A-Za-z])\d{3}\s?\d{3}(?![A-Za-z])$/;
     if (pinPattern.test(pin)) {
@@ -21,6 +22,7 @@ validatePin("400088B");      // Invalid PIN: 400088B
 // PinCode UC-4 
 validatePin("400 088");      // Valid PIN: 400 088 
 
+
 // Function to validate email address
 function validateEmail(email) {
     // Regular expression for full email validation (UC-1 to UC-5)
@@ -35,4 +37,8 @@ function validateEmail(email) {
 } 
 
 // Email UC-1 
-validateEmail("abc@bridgelabz.co");        // Valid Email:
+validateEmail("abc@bridgelabz.co");        // Valid Email:  
+
+// Email UC-2
+validateEmail("abc.xyz@bridgelabz.co.in"); // Valid Email: 
+
